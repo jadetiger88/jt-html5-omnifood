@@ -1,30 +1,36 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Omni Fodd</title>
 		<link rel="stylesheet" type="text/css" href="../vendor/css/normalize-css.v3.0.2.css"> 
 		<link rel="stylesheet" type="text/css" href="../vendor/css/grid.css"> 
 		<link rel="stylesheet" type="text/css" href="../vendor/css/font-awesome.css"> 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'> -->
+		<link rel="stylesheet" type="text/css" href="css/media.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/jt.ico">        <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'> -->
 	</head>
 	<body>
 		<header>
-			<div class="row">
-				<img id="logo" src="img/logo-white.png" alt="Omni Food Logo">
-				<nav id="main-nav">
-					<ul>
-						<li><a href="#">Food delivery</a></li>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Our cities</a></li>
-						<li><a href="#">Sign up</a></li>
-					</ul>
-				</nav>
+			<div id="nav-div">
+				<div class="row">
+					<nav id="main-nav">
+						<img id="logo" src="img/logo-white.png" alt="Omni Food Logo">
+						<img id="logo-black" src="img/logo.png" alt="Omni Food Logo">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#features">Food delivery</a></li>
+							<li><a href="#how-it-works">How it works</a></li>
+							<li><a href="#cities">Our cities</a></li>
+							<li><a href="#plans">Sign up</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 			<div class="hero-text-box">
 				<h1>Goodbye junk food.<br> Hello super health meals.</h1>
-				<a class="btn btn-full" href="#">I'm hungry</a>
-				<a class="btn btn-shadow"href="#">Show me more</a>
+				<a class="btn btn-full" href="#plans">I'm hungry</a>
+				<a class="btn btn-shadow"href="#meals-photo">Show me more</a>
 			</div>
 		</header>
 
@@ -340,6 +346,9 @@
 				<p>Copyright &copy; 2015 By Jade Tiger. All rights reserved.</p>
 			</div>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../vendor/js/jquery.waypoints.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
 

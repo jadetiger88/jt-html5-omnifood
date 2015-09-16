@@ -80,22 +80,29 @@ header h1 {
 	word-spacing: 3px;
 }
 
-header #logo {
-	height: 100px;
+
+header #main-nav #logo, 
+header .sticky #main-nav #logo-black {
+	height: 50px;
 	float: left;
-	margin-top: 20px;
+	margin: 5px 0;
+	display: block;
 }
 
-header #main-nav {
+header #main-nav #logo-black {
+	display: none;
+}
+
+header #main-nav ul {
 	float: right;
-	margin-top: 50px;
+	margin-top: 15px;
+	line-height: 30px;
 }
 
 header #main-nav ul li {
 	list-style: none;
 	display: inline-block;
 	list-style: none;
-	color: #fff;
 	margin-left: 40px;
 }
 
@@ -113,6 +120,35 @@ header #main-nav ul li a:active {
 	transition: border-bottom .2s;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255,255, 0.98);
+	border-bottom: 1px solid #ccc;
+	z-index: 200;
+}
+
+header .sticky #main-nav ul {
+	margin-top: 15px;
+	line-height: 30px;
+}
+
+header .sticky #main-nav ul li a {
+	color: #888;
+}
+
+header .sticky #main-nav #logo-black {
+	height: 50px;
+	float: left;
+	margin: 5px 0;
+	display: block;
+}
+
+header .sticky #main-nav #logo {
+	display: none;
+}
 
 /*
 ** Section features
